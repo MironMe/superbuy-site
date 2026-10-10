@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperBuy | Smart Shopping</title>
+    <meta
+      name="description"
+      content="SuperBuy offers trending deals, daily discounts, and premium essentials for tech, fashion, home, and lifestyle shopping."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <p>Free shipping over $50 • New drop: Summer Essentials</p>
+        <a href="#shop">Shop now</a>
+      </div>
+    </header>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-box">
+          <div class="brand-mark">S</div>
+          <div>
+            <span class="brand-name">SuperBuy</span>
+            <small>Smart deals</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#deals">Deals</a>
+          <a href="#categories">Categories</a>
+          <a href="#featured">Featured</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.94 12.56l4.39 4.4 1.41-1.41-4.4-4.39A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="icon-btn" aria-label="Wishlist">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A4.5 4.5 0 016.5 4c1.74 0 3.41.81 4.5 2.09A6.06 6.06 0 0115.5 4 4.5 4.5 0 0120 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+          <button class="cart-btn" aria-label="Cart">
+            Cart
+            <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Trending now</span>
+            <h1>Shop smarter. Save bigger.</h1>
+            <p>
+              Discover top-rated essentials from everyday must-haves to standout
+              tech, fashion, and home upgrades — all at everyday prices.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop Now</a>
+              <a class="btn btn-secondary" href="#featured">Explore Deals</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Store stats">
+              <li><strong>120K+</strong><span>happy shoppers</span></li>
+              <li><strong>4.9/5</strong><span>average rating</span></li>
+              <li><strong>24h</strong><span>fast dispatch</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured products">
+            <div class="floating-card card-top">
+              <span class="tag">Hot deal</span>
+              <h3>Noise Cancelling</h3>
+              <p>Wireless Headphones</p>
+              <strong>$129</strong>
+            </div>
+
+            <div class="hero-image-wrap">
+              <div class="glow"></div>
+              <img
+                src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=80"
+                alt="Close-up of tech accessories and a product showcase"
+              />
+            </div>
+
+            <div class="floating-card card-bottom">
+              <span>Flash sale</span>
+              <strong>Up to 70% OFF</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands container" aria-label="Featured brands">
+        <span>Trusted by shoppers worldwide</span>
+        <div class="brand-row">
+          <div>Apple</div>
+          <div>Samsung</div>
+          <div>Nike</div>
+          <div>Canon</div>
+          <div>Dyson</div>
+        </div>
+      </section>
+
+      <section id="categories" class="container category-section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Browse categories</span>
+            <h2>Find what you need</h2>
+          </div>
+          <a href="#shop">View all</a>
+        </div>
+
+        <div class="categories-grid">
+          <article class="category-card card-tech">
+            <div class="icon-wrap">📱</div>
+            <h3>Tech</h3>
+            <p>Smartphones & accessories</p>
+          </article>
+          <article class="category-card card-fashion">
+            <div class="icon-wrap">👟</div>
+            <h3>Fashion</h3>
+            <p>Streetwear & everyday basics</p>
+          </article>
+          <article class="category-card card-home">
+            <div class="icon-wrap">🏠</div>
+            <h3>Home</h3>
+            <p>Furniture & cozy upgrades</p>
+          </article>
+          <article class="category-card card-beauty">
+            <div class="icon-wrap">✨</div>
+            <h3>Beauty</h3>
+            <p>Self-care essentials</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="shop" class="container product-section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Top picks</span>
+            <h2>Trending products</h2>
+          </div>
+          <a href="#featured">More deals</a>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="badge badge-sale">-30%</div>
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Smart watch on display" />
+            <div class="product-body">
+              <div class="product-meta"><span>Electronics</span><span>4.8</span></div>
+              <h3>Smart Watch Pro</h3>
+              <div class="price-row">
+                <strong>$199</strong>
+                <span>$279</span>
+              </div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="badge badge-new">New</div>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Running shoes" />
+            <div class="product-body">
+              <div class="product-meta"><span>Running</span><span>4.9</span></div>
+              <h3>Aero Runner X</h3>
+              <div class="price-row">
+                <strong>$120</strong>
+                <span>$160</span>
+              </div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="badge badge-hot">Hot</div>
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Modern lamp and home accessory" />
+            <div class="product-body">
+              <div class="product-meta"><span>Home</span><span>4.7</span></div>
+              <h3>Glow Desk Lamp</h3>
+              <div class="price-row">
+                <strong>$68</strong>
+                <span>$89</span>
+              </div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="badge badge-sale">-25%</div>
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Leather backpack" />
+            <div class="product-body">
+              <div class="product-meta"><span>Travel</span><span>4.8</span></div>
+              <h3>Urban Backpack</h3>
+              <div class="price-row">
+                <strong>$94</strong>
+                <span>$125</span>
+              </div>
+              <button class="add-to-cart">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="deals" class="promo-strip">
+        <div class="container promo-inner">
+          <div>
+            <span class="eyebrow light">Weekend drop</span>
+            <h2>Flash deals: up to 70% off selected essentials</h2>
+          </div>
+          <a class="btn btn-primary" href="#featured">Claim offer</a>
+        </div>
+      </section>
+
+      <section id="featured" class="container feature-section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Why shoppers love us</span>
+            <h2>Built for convenience</h2>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast shipping</h3>
+            <p>Same-day dispatch for top sellers and essentials.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Secure checkout</h3>
+            <p>Protected payments and trusted order tracking.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Helpful support</h3>
+            <p>Live help whenever you need product guidance.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews" class="container testimonial-section">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Customer reviews</span>
+            <h2>Real stories, real value</h2>
+          </div>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The product quality is premium and the shipping was surprisingly fast.
+              I’ve already ordered twice this month.”
+            </p>
+            <div class="reviewer">
+              <strong>Amelia R.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “SuperBuy made it easy to compare options and find a deal that felt
+              genuinely worth it.”
+            </p>
+            <div class="reviewer">
+              <strong>Marcus T.</strong>
+              <span>Tech shopper</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “A clean website, great offers, and a smooth checkout. It feels polished
+              from the first click to delivery.”
+            </p>
+            <div class="reviewer">
+              <strong>Naomi C.</strong>
+              <span>Home decor buyer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container newsletter-inner">
+          <div>
+            <span class="eyebrow">Stay in the loop</span>
+            <h2>Get member-only deals in your inbox</h2>
+          </div>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-box footer-brand">
+            <div class="brand-mark">S</div>
+            <div>
+              <span class="brand-name">SuperBuy</span>
+              <small>Smart deals</small>
+            </div>
+          </div>
+          <p>Smart shopping for the things you use every day.</p>
+        </div>
+
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#shop">New arrivals</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#deals">Promotions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 SuperBuy. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
